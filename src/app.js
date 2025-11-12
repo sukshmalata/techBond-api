@@ -11,7 +11,7 @@ require("./utils/cronjob");
 
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: ["https://techbond.co.in", "http://localhost:5173"],
     credentials: true,
   })
 );
