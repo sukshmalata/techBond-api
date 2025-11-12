@@ -13,7 +13,11 @@ const getSecretRoomId = (userId, targetUserId) => {
 const initializeSocket = (server) => {
   const io = socket(server, {
     cors: {
-      origin: ["https://techbond.co.in", "http://localhost:5173"],
+      origin: [
+        "http://localhost:80",
+        "https://techbond.co.in",
+        "http://localhost:5173",
+      ],
     },
   });
 
